@@ -1,0 +1,425 @@
+/* ---- vendors ---- */
+
+@import url("vendors/scrolling-nav.css");
+
+@font-face {
+    font-family: museo-sans;
+    src: url("../fonts/museosans-100.otf");
+ }
+ 
+
+
+/* ------------ SCSS Variables ----------- */
+
+$aguablue: #85B09A;
+$green: #203E35;
+$black: #101820;
+$grey: #E5E1E6;
+$backgrey: #54585A;
+$hotred: #8A2A2B;
+$golden: #B36A2B;
+
+.golden {
+    color: $golden !important;
+}
+
+/*------ BODY ---- > */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+}
+
+h1, h2, h3 {
+    font-family:  museo-sans !important;
+}
+
+body p {
+    font-size: 16px;
+    color: #101820;
+}
+
+.button-cta {
+    padding: 10px 10px;
+    border: solid 1px $golden;
+    margin: 0% 10%;
+}
+
+.button-cta:focus, .button-cta:hover {
+    border: solid 2px $golden;
+}
+
+
+.button-ghost {
+    border: $green solid 1px;
+    padding: 10px 50px;
+}
+
+
+.button-ghost:focus {
+    color: $grey;
+    background-color: $green;
+    font-weight: bold;
+}
+
+.mini-icon {
+    width: 50%;
+    margin: auto;
+
+}
+
+.mini-icon-medium {
+    height: 5em;
+}
+
+a {
+    text-decoration: none !important;
+
+}
+/* ------------------ Nav -------------------------*/
+
+.navbar-brand img {
+    height: 40px !important;
+    margin-top: -10px;
+}
+
+.navbar {
+    background: transparent;
+   
+}
+
+.nav {
+    float: right;
+    font-weight: bold;
+    color: $green;
+    
+}
+
+a {
+    color: $green;
+}
+
+nav {
+    margin-bottom: 1px;
+    display: block;
+    
+}
+
+nav a:hover {
+    font-weight: bold;
+    background-color: transparent !important;
+    color: $golden !important;
+}
+nav a:active {
+    font-weight: bold;
+    background-color: transparent !important;
+    color: $golden !important;
+}
+
+ .icon-bar {
+     color: $golden;
+ }
+
+ .navbar-toggle {
+    background-image: url('/img/logo-b.svg');
+    background-repeat: no-repeat;
+
+}
+
+
+/* ------------- HOME --------------- */
+#home {
+    background-image: url("../img/hero-bicos-3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    background-attachment: fixed;
+    
+}
+
+
+#home h1 {
+    color: $green;
+    letter-spacing: 10px;
+    font-weight: bold;
+}
+
+#home span {
+    color: $green;
+}
+#home img {
+    max-height: 30vh;
+    position: absolute;
+    right: 20%;
+    top: 18%;
+}
+
+.bicos-black {
+    color: $grey !important;
+}
+
+
+ 
+/*------------- MENU ----------------- */
+
+
+#menu {
+    color: $black;
+    display: block;
+    margin: 5em 0 5em 0;
+    
+}
+
+#menu h1 {
+    color: $golden;
+    cursor: pointer;
+}
+#menu h1:hover {
+    color: $golden;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+
+#menu p {
+    padding: 10px;
+    color: #203E35;
+    cursor: pointer;
+}
+
+.photo-menu {
+    width: 100% !important;
+    margin: 0px;
+    padding: 0px;
+}
+
+.peixes-menu {
+ width: 95%;
+ margin: 0px;
+ padding: 0px !important;
+ cursor: pointer;
+}
+.no-padding {
+    padding: 0px !important;
+}
+
+// .column-container {
+//     display: table !important;
+// }
+
+// .column {
+//     display: table-cell !important;
+//     float: none;
+//     vertical-align: top;
+// }
+/* animation */ 
+// .peixes-menu:hover {
+//     transform: scale(1.2);
+//    }
+
+.peixes-back-color {
+    background-color: #E8E8E8;
+}
+
+/* -------------- SERVICIOS --------------------*/
+
+#servicios {
+    background-image: url("../img/nuestros-servicios.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#servicios img {
+    margin: auto;
+    max-width: 75px;
+    max-height: 75px;
+}
+
+.bicos-white {
+    color: white !important;
+}
+
+
+
+
+/* -------------- Restaurante --------------------*/
+
+#reserva {
+    margin-top: 10vh;
+    height: 70vh;
+}
+
+#reserva h3 {
+    font-size: 2em;
+    color: $golden;
+}
+
+#reserva p {
+    color: #101820;
+
+}
+
+.reserva-text {
+    position: relative;
+    top: 20vh;    
+    border: solid $golden 2px;
+    margin: 0% 40%;
+    background-color: rgba($color: #fff, $alpha: 0.8)
+}
+
+
+#reserva {
+    background-image: url("../img/reserva-ahora.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+
+}
+
+
+
+
+/* ------------------ Galeria --------------------*/
+
+
+.img-galeria {
+   width: 100%;
+
+}
+
+
+/* --------- MENU ---------- */
+
+
+#productos {
+    margin: 5em 0 5em 0;
+}
+
+#productos h1 {
+    text-align: left;
+}
+#productos p {
+    text-align: left;
+}
+
+#productos-menu {
+    width: 70%;
+    margin: 2em 0;
+    display: initial;
+}
+
+
+
+
+/* ----------------- CONTACTO ----------------------- */
+
+#contacto {
+    h1 {
+        color: $golden !important;
+        font-size: 1.5em !important;
+    }
+    h2 {
+        color: $golden !important ;
+        padding: 10px
+    }
+    margin-bottom: -10px;
+    i, p, h3 {
+        color: #101820;
+    }
+    .logo-bicos {
+        max-width: 50%;
+        margin: auto;
+    }
+   
+
+}
+
+.visitanos {
+    margin: 10vh 5vw;
+}
+
+.middle-line{
+    border-left: solid 1px $black   ;
+}
+
+/* map */
+
+#map {
+    height: 300px;
+    width: 98%;
+    z-index: 0;
+    margin: auto;
+    background-color: $grey;
+}
+
+#redes i {
+    margin: 20px;
+
+}
+
+/* ---------- FOOTER --------- */
+
+// footer {
+//     background-image: url("../img/flower-pattern-small.jpg");
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-size: contain;
+//     height: 10vh;
+//     background-attachment: fixed;
+    
+// }
+
+footer p {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+    color: $black;
+}
+footer a {
+    color: $black;
+}
+footer a:hover {
+    font-weight: bold;
+}
+
+/* ---------- FOOTER --------- */
+
+
+@media only screen and (max-width: 600px) {
+
+    #home {
+        background-image: url("../img/hero-bicos.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 70vh;
+        background-attachment: fixed;
+        
+    }
+
+
+    #home img {
+        position: relative;
+            max-width: 80%;
+            top: 20%;
+            right: auto;
+           margin: auto;
+        }
+        #somos img {
+            width: 100%;
+        }
+
+.reserva-text {
+    margin: 0% 5% !important;
+}
+
+// .col { 
+//     display: block;
+//     width: 100%;
+// }
+
+    }
