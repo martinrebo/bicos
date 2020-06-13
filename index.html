@@ -180,10 +180,10 @@
                 <p> <i class="far fa-envelope"></i> info@bicosrestaurante.com</p>
                 <p> <i class="fas fa-clock"></i> Horario: </p>
                 <ul>
-                    <li> <strong> Martes-Sabado: </strong>  <br>
-                         12:30 - 16:00 | 19:00 - 23:00 </li>
-                    <li> <strong> Domingo: </strong> <br>
-                         12:30 - 16:00 </li>
+                    <li> <strong> Martes - Domingo: </strong>  <br>
+                         13:00 - 15:45 </li>
+                    <li> <strong> Martes - Sábado: </strong> <br>
+                         19:30 - 23:00 </li>
                 </ul>
 
                 <div class=" container mt-3">
@@ -256,18 +256,40 @@
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
 
-
-    <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<!-- https://kenwheeler.github.io/slick/ -->
+     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
             $('.bicos-carrousel').slick({
                 infinite: true,
-                slidesToShow: 2,
+                slidesToShow: 3,
                 centerMode: true,
+                responsive: [
+    {
+      breakpoint: 990,
+      settings: {
+        slidesToShow: 2,
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+
+
+
+                
             });
         }); 
     </script>
-
+<!--
 <script async defer
 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRu0nYYMSHWOqkfxf2YVdhp1phQdzY2H4&callback=initMap "></script>
 
